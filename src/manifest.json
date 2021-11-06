@@ -1,0 +1,17 @@
+{
+	"name": "Post Webhook",
+	"description": "Send to the webhook url by post method.",
+	"manifest_version": 2,
+	"version": "0.1",
+    "permissions": ["activeTab", "storage"],
+	"options_page": "options.html",
+	"browser_action": {
+	    "default_icon": {
+	        "16": "images/icon16.png",
+	        "24": "images/icon24.png",
+	        "32": "images/icon32.png"
+	    },
+	    "default_title": "Post Webhook",
+	    "default_popup": "popup.html"
+	}
+}

@@ -1,0 +1,24 @@
+# .gitignore
+# Ignore All
+*
+!*/
+
+# White List
+!.gitignore
+!.gitattributes
+!.git/*
+!.github/*
+!*.csv
+!*.gif
+!*.jpg
+!*.js
+!*.json
+!*.txt
+!*.md
+!*.pdf
+!*.png
+!*.py
+!*.sh
+!*.svg
+!*.yml
+
