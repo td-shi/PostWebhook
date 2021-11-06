@@ -11,6 +11,8 @@
 !*.csv
 !*.gif
 !*.jpg
+!*.html
+!*.css
 !*.js
 !*.json
 !*.txt

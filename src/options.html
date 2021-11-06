@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    function saveConfig(){
+        let url = document.getElementById('url').value;
+        chrome.storage.local.set({'hookUrl': url}, function(){});
+    }
+
+    function loadConfig(){
+        chrome.storage.local.get('hookUrl', function(items){
+            document.getElementById('url').value = items.hookUrl;
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadConfig());
+    </script>
+  </head>
+  <body>
+  <input type="textbox" id="url"/>
+  <input type="button" id="save" value="SAVE" onclick="saveConfig()">
+  </body>
+</html>
+
