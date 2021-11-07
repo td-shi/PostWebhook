@@ -5,6 +5,7 @@
     function saveConfig(){
         let url = document.getElementById('url').value;
         chrome.storage.local.set({'hookUrl': url}, function(){});
+        window.close();
     }
 
     function loadConfig(){
